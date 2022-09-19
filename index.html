@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
         <style>
             
            body {
@@ -9,40 +10,56 @@
               background-size:cover;
               background-position: 0 -70px; 
            }
-           .text1 {
+           .text{
               position: absolute;
+              color: aliceblue;
+              font-size: 500%;
+              font-family: Audiowide;
+            }
+           .text1 {
               left: 60%;
               top: 1%;
-              color: aliceblue;
-              font-size: 600%;
-              font-family: fantasy;
+              color: orange;
+              text-align: right;
+              margin-right: 10%;
             }
             .text2 {
-              position: absolute;
               right: 60%;
-              bottom: 1%;
-              color: aliceblue;
-              font-size: 600%;
-              font-family: fantasy;
+              bottom: 7%;
+              color: rgb(42, 176, 242);
             }
-            .button1{
+            .button{
               position: absolute;
-              left: 77%;
-              top: 35%;
               background-color: rgba(251, 251, 251, 0);
               border: 3%;
-              border-color: orange;
               opacity: 100%;
               font-size: 250%;
               text-align-last: center;
               font-family: fantasy;
-              color: orange;
+              font-weight: 100;
               border-radius: 50px;
               transition-duration: 0.4s;
               cursor: pointer;
             }
+            .button1{
+              left: 75%;
+              top: 35%;
+              border-color: orange;
+              color: orange;
+            }
             .button1:hover{
                 background-color: orange;
+                color: white;
+                content: "Start this story" !important;
+            }
+            .button2{
+              right: 77%;
+              bottom: 28%;
+              border-color: rgb(42, 176, 242);
+              color:  rgb(42, 176, 242);
+            }
+            .button2:hover{
+                background-color: rgb(42, 176, 242);
                 color: white;
                 content: "Start this story" !important;
             }
@@ -51,15 +68,21 @@
 
     <body>
 
-        <h1 class="text1">A Story With</h1>
+        <h1 class="text text1">First Met With</h1>
 
         <a href="https://www.google.com/">
 
-            <button class="button1"style="height:100px;width:200px;border-radius: 50px;"><b>Click</b></button>
+            <button class="button button1"style="height:100px;width:250px;border-radius: 50px;"><b>Your View</b></button>
 
         </a>
 
-        <h1 class="text2">My AI Friend</h1>
+        <h1 class="text text2">My AI Friend</h1>
+
+        <a href="https://www.google.com/">
+
+            <button class="button button2"style="height:100px;width:200px;border-radius: 50px;"><b>AI View</b></button>
+
+        </a>
         
     </body>
 </html>
